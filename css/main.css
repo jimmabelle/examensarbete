@@ -1,2 +1,177 @@
+/* Clearfix by Nicolas Gallagher ============================ */
+/* box-sizing */
+/* border-radius */
+/* background-size */
+/* transition */
+/*==============================================================
+*
+* Base,
+* is staff that is not unexpected and its also standard reset
+*
+*==============================================================*/
+/* line 7, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/base/_base.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/base/_base.scss */
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+/* line 15, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/base/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 19, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/base/_base.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 24, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/base/_base.scss */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 28, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #ee932a;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 33, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/base/_base.scss */
+a:active,
+a:hover,
+a:focus {
+  color: #CCCCCC;
+}
+
+/* line 39, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/base/_base.scss */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout =================================================== */
+/* line 46, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/base/_base.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*==============================================================
+* Header
+==============================================================*/
+/* line 7, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.header {
+  width: 100%;
+  height: auto;
+  background: url("../images/png/footer_lodyas.png") repeat;
+  position: relative;
+}
+
+/* line 13, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.header-content {
+  width: 91.66%;
+  height: 60px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 19, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.logo-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+/* line 24, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.form-wrapper {
+  position: absolute;
+  right: 0;
+  top: 14px;
+}
+
+/* line 29, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.top-cust-form li {
+  float: left;
+  padding: 5px;
+  margin-right: 10px;
+  border: 2px solid yellow;
+}
+
+/* line 35, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.top-cust-form li:nth-child(1) {
+  padding: 0;
+}
+
+/* line 40, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.form {
+  position: relative;
+}
+
+/* line 43, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.form input[type="search"] {
+  position: absolute;
+  right: 0;
+  font-size: 15px;
+  padding: 5px 0;
+  width: 180px;
+  border: 2px solid #ee932a;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 53, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.form input[type="search"]:hover {
+  width: 300px;
+}
+
+/* line 56, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.form input[type="search"]:focus {
+  outline: none;
+}
+
+/* line 60, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.form input[type="submit"] {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  padding: 3px 0;
+  border: none;
+  width: 20px;
+  background: url("../images/png/search.png") center center no-repeat;
+  -webkit-background-size: 15px;
+  -moz-background-size: 15px;
+  -o-background-size: 15px;
+  background-size: 15px;
+  z-index: 1;
+}
+
+/* line 71, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
+.form input[type="submit"]:focus {
+  outline: none;
+}
 
 /*# sourceMappingURL=../css/main.map */

@@ -9,28 +9,36 @@
     	<meta name='keywords' content='HTML5,CSS3,Sass,JavaScript'>
       <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
       <link href="css/main.css" rel="stylesheet" />
+      <link href="css/normalize.css" rel="stylesheet" />
   </head>
   <body>
+
+  <!-- Main wrapper -->
+  <div class='wrapper'>
     <!-- Header tag -->
     <header class='header'>
-      <div class='header-content group'>
+      <div class='header-content'>
       	<div class='logo-wrapper'>
       		<a href='index.html'>
       			<img class='logo' src='images/png/logo.png' alt='logo'/>
       		</a>
       	</div>
       	<div class='form-wrapper'>
-      	<ul class='top-cust-form'>
-      		<li>
-      			<form class='form'>
-      				<input class='search' type='search' name='search' placeholder='Search..'>
-      				<input class='search-submit' type='submit' value=''>
-      			</form>
-      		</li>
-      		<li><a id='reg-btn' href='#'>Register</a></li>
-      		<li><a id='log-btn' href='#'>Login</a></li>
-      	</ul>
-      	<div>
+        	<ul class='top-cust-form'>
+        		<li>
+        			<form class='form'>
+        				<input type='search' name='search' placeholder='Search..'>
+        				<input type='submit' value=''>
+        			</form>
+        		</li>
+        		<li>
+              <a id='reg-btn' href='#'>Register</a>
+            </li>
+        		<li>
+              <a id='log-btn' href='#'>Login</a>
+            </li>
+        	</ul>
+      	</div>
       </div>
     </header>
     <!-- Navigation tag-->
@@ -210,5 +218,6 @@
     		<p class='copyright'>Copyright 2017 Belleblikstad</p>
     	</div>
     </footer>
+  </div>
   </body>
 </html>

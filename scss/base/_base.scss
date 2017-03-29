@@ -1,0 +1,49 @@
+/*==============================================================
+*
+* Base,
+* is staff that is not unexpected and its also standard reset
+*
+*==============================================================*/
+html {
+	@include box-sizing(border-box);}
+
+body {
+    font-size: 16px;
+  	font-family: $base-fontFamily;
+  	letter-spacing: 1.5px;}
+
+h1, h2, h3, h4, h5, h6 {
+  	margin: 0;
+  	padding: 0;}
+
+ul {
+  	margin: 0;
+  	padding: 0;
+  	list-style-type: none;}
+
+p {
+  	margin: 0;
+  	padding: 0;}
+
+a {
+  	text-decoration: none;
+  	color: #ee932a;
+		@include transition(null, .2s, ease-in-out, null);}
+
+a:active,
+a:hover,
+a:focus {
+    color: #CCCCCC;
+  }
+
+fieldset {
+  	border: none;
+  	margin: 0;
+  	padding: 0;
+  }
+
+	/* Layout =================================================== */
+	*,
+	*:before,
+	*:after {
+		@include box-sizing(border-box);}

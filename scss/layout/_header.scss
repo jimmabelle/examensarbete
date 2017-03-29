@@ -1,0 +1,75 @@
+/*==============================================================
+* Header
+==============================================================*/
+$image-png: "../images/png";
+$image-jpg: "../images/jpg";
+
+.header {
+  width: $width-12;
+  height: auto;
+  background: url('#{$image-png}/footer_lodyas.png') repeat;
+  position: relative;}
+
+.header-content {
+  width: $width-11;
+  height: 60px;
+  position: relative;
+  margin: 0 auto;}
+
+.logo-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0px;}
+
+.form-wrapper {
+  position: absolute;
+  right: 0;
+  top: 14px;}
+
+.top-cust-form li {
+  float: left;
+  padding: 5px;
+  margin-right: 10px;
+  border: 2px solid yellow;
+
+  &:nth-child(1) {
+      padding: 0;}
+
+}
+
+.form {
+  position: relative;
+
+  input[type="search"] {
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    padding: 5px 0;
+    width: 180px;
+    border : 2px solid $color-lightOrange;
+    @include border-radius(4px)
+    @include transition(width, .4s, ease-in-out, null);
+
+    &:hover {
+      width: 300px;}
+
+    &:focus {
+      outline: none;}
+    }
+
+  input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    padding: 3px 0;
+    border: none;
+    width: 20px;
+    background: url('#{$image-png}/search.png') center center no-repeat;
+    @include background-size(15px);
+    z-index: 1;
+
+    &:focus {
+      outline: none;}
+    }
+
+}

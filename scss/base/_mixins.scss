@@ -1,0 +1,44 @@
+/* Clearfix by Nicolas Gallagher ============================ */
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/* box-sizing */
+@mixin box-sizing($box-sizing) {
+    -webkit-box-sizing: $box-sizing;
+       -moz-box-sizing: $box-sizing;
+            box-sizing: $box-sizing;
+}
+
+/* border-radius */
+@mixin border-radius($radius) {
+	-moz-border-radius: $radius;
+	     border-radius: $radius;
+}
+
+/* background-size */
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
+/* transition */
+@mixin transition(
+	$property: $default-transition-property,
+	$duration: $default-transition-duration,
+	$function: $default-transition-timing-function,
+	$delay: $default-transition-delay) {
+	-webkit-transition: $property $duration $function $delay;
+       -moz-transition: $property $duration $function $delay;
+         -o-transition: $property $duration $function $delay;
+            transition: $property $duration $function $delay;
+}
