@@ -44,7 +44,7 @@ $image-jpg: "../images/jpg";
     position: absolute;
     right: 0;
     font-size: 15px;
-    padding: 5px 0;
+    padding: 5px 0 5px 5px;
     width: 180px;
     border : 2px solid $color-lightOrange;
     @include border-radius(4px)

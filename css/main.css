@@ -132,7 +132,7 @@ fieldset {
   position: absolute;
   right: 0;
   font-size: 15px;
-  padding: 5px 0;
+  padding: 5px 0 5px 5px;
   width: 180px;
   border: 2px solid #ee932a;
   -moz-border-radius: 4px;
@@ -172,6 +172,52 @@ fieldset {
 /* line 71, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
 .form input[type="submit"]:focus {
   outline: none;
+}
+
+/*==============================================================
+* Navigation
+==============================================================*/
+/* line 4, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_nav.scss */
+nav {
+  width: 100%;
+  background-color: #771100;
+}
+
+/* line 8, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_nav.scss */
+nav ul {
+  text-align: center;
+}
+
+/* line 11, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_nav.scss */
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+/* line 15, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_nav.scss */
+nav ul li a:hover {
+  color: #f2f2f2;
+}
+
+/* line 19, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_nav.scss */
+nav ul li:hover ul {
+  display: block;
+}
+
+/* line 24, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_nav.scss */
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #771100;
+  border: 3px solid #FF9900;
+  margin-top: 20px;
+  margin-left: -20px;
+  z-index: 1;
+}
+
+/* line 33, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_nav.scss */
+nav ul ul li {
+  display: block;
 }
 
 /*# sourceMappingURL=../css/main.map */
