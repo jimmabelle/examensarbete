@@ -1,0 +1,45 @@
+/*==============================================================
+* Container
+==============================================================*/
+main {
+  position: relative;
+  width: $width-12;
+  background-color: gray;}
+
+section {
+  position: relative;
+  width: $width-12;}
+
+  @include keyframes (changeLetter)
+  {
+      0% { content: "Ladda vår gratis templates!";
+      }
+      50% { content: "Ringa oss! 073-7805673";
+      }
+      100% { content: "Ge oss återkoppling!";
+      }
+  }
+
+.class-banner {
+  	background: url('#{$image-jpeg}/laptop.jpeg') top center repeat;
+  	height: 500px;
+  	letter-spacing: 3px;
+  	color:  #CCCCCC;
+  	text-transform: uppercase;
+  	font-size: 200%;
+  	font-weight: bold;
+  	text-align: center;
+    @include flexbox();
+    @include alignbox(center);
+    @include packbox(center);
+  	 min-height: 50vh;
+
+     &::after {
+        font-size: 50px;
+        background-color: hsla(0, 0%, 0%, 0.50);
+        font-family: $base-fontFamily;
+        @include animation(changeLetter, 6s, linear, 0.2s, infinite, alternate);
+        content:"";
+        margin: 0;}
+
+}
