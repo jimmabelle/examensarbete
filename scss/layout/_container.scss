@@ -91,30 +91,29 @@ section:nth-child(3) {
 /* section iv */
 section:nth-child(4) {
   background-color: $color-lightGray;
-
   div {
 	   background-color: #fff;
-     padding: 20px;}
+     padding: 20px;
+     ul {
+       @include flexbox();
+       @include flex-flow(row wrap);
+       @include justify-content(space-between);
+       li {
+         background-color: $color-lightOrange;
+         width: 33%;
+         margin: 0 auto;
+         text-align: center;
+         font-weight: 800;
 
-  ul {
-    @include flexbox();
-    @include flex-flow(row wrap);
-    @include justify-content(space-between);}
+         img {
+           width: 30%;
+           padding-bottom: 10%;}
 
-  li {
-    background-color: $color-lightOrange;
-    width: 33%;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: 800;
-
-    img {
-      width: 30%;
-      padding-bottom: 10%;}
-
-    img:not(.png) {
-      width: 30%;}
-  }
+         img:not(.png) {
+           width: 30%;}
+       }
+     }
+   }
 }
 
 /* section v */
