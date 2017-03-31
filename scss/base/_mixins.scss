@@ -90,6 +90,7 @@
     }
 }
 
+/* flex-box ================================================*/
 /* display */
 @mixin flexbox() {
   display: -webkit-box;
@@ -103,12 +104,29 @@
 @mixin alignbox($value) {
   -webkit-box-align: $value;
      -ms-flex-align: $value;
-        align-items: $value;
-}
+        align-items: $value;}
 
 /* box-pack */
 @mixin packbox($value) {
   -webkit-box-pack: $value;
      -ms-flex-pack: $value;
-   justify-content: $value;
-}
+   justify-content: $value;}
+
+/* flex-direction + flex-wrap = flex-flow */
+@mixin flex-flow($value) {
+  -webkit-flex-direction: $value;
+          flex-direction: $value;}
+
+/* justify-content */
+@mixin justify-content($value) {
+    -ms-justify-content: $value;
+   -moz-justify-content: $value;
+-webkit-justify-content: $value;
+        justify-content: $value;}
+
+/* box-orient */
+@mixin box-orient($value) {
+/* Children should be oriented vertically */
+      -moz-box-orient: horizontal;
+   -webkit-box-orient: horizontal;
+           box-orient: horizontal;}

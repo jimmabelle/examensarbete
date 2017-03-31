@@ -8,9 +8,11 @@ main {
 
 section {
   position: relative;
-  width: $width-12;}
+  width: $width-12;
+  padding: 20px;}
 
-  @include keyframes (changeLetter)
+/* section i */
+@include keyframes (changeLetter)
   {
       0% { content: "Ladda vår gratis templates!";
       }
@@ -42,4 +44,195 @@ section {
         content:"";
         margin: 0;}
 
+}
+
+/* section ii */
+section:nth-child(2) {
+	background-color:  $color-lightGray;
+
+  div {
+	   background-color: $color-white;
+	   text-align: center;
+	   padding: 30px 0;}
+
+  h3 {
+     padding: 30px 0;
+     font-size: 300%;
+     text-transform: uppercase;
+     letter-spacing: 20px;}
+
+  ul {
+   	width: 300px;
+   	margin: 0 auto;
+
+    li {
+	     padding-bottom: 10px;
+	     font-size: 25px;
+	     font-weight: 900;
+	     background: url(../images/svg/check.svg) no-repeat;
+	     text-align: justify;
+	     padding-left: 50px;
+     }
+  }
+
+}
+
+/* section iii */
+section:nth-child(3) {
+  background-color: $color-lightGray;
+
+  div {
+	   background-color: $color-white;
+	   padding: 30px;
+	   line-height: 150%;
+   }
+}
+
+/* section iv */
+section:nth-child(4) {
+  background-color: $color-lightGray;
+
+  div {
+	   background-color: #fff;
+     padding: 20px;}
+
+  ul {
+    @include flexbox();
+    @include flex-flow(row wrap);
+    @include justify-content(space-between);}
+
+  li {
+    background-color: $color-lightOrange;
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 800;
+
+    img {
+      width: 30%;
+      padding-bottom: 10%;}
+
+    img:not(.png) {
+      width: 30%;}
+  }
+}
+
+/* section v */
+section:nth-child(5) {
+  background-color:  $color-lightGray;
+
+  div {
+	   background-color: #fff;
+     padding: 20px;}
+}
+
+/* modal =========================================================*/
+.modal {
+  display: none;
+  background-color: hsla(9, 100%, 23%, 0.70);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $width-12;
+  height: 100%;
+  z-index: 1;
+
+  h3 {
+    margin-bottom: 0;
+    text-align: center;
+    padding: 5px 0;}
+}
+
+.modal-wrapper {
+  background-color: $color-white;
+  @include border-radius(20px);
+  width: 380px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -214px;
+  overflow: hidden;}
+
+.modal-header {
+  background-color: $color-lighterGray;
+  padding: 10px 5px;
+
+  a {
+    font-size: 200%;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    @include transition(transform, 2s, ease-out, null);
+    text-decoration: none;
+    color: #ee932a;
+
+    &:hover {
+      transform: rotate(1turn);}
+  }
+}
+
+.modal-content {
+  padding: 15px;
+
+  .form {
+    margin: 0 auto;
+
+    .form-field , .form-submit {
+      padding: 10px 4px;}
+
+    .form-field {
+      border: none;
+      margin: 0 auto;
+      text-align: center;
+
+      .form-label {
+        font-weight: bold;
+        text-align: justify;
+        width: 100%;
+        padding-bottom: 2px;}
+
+      .form-input {
+        width: 100%;
+        padding: 5px 0;
+
+        background-color: #eee;
+        @include border-radius(2px);
+        border: solid 2px #eee;
+        transition: border 0.3s;
+
+        &:focus {
+          outline: none;
+          border: 1px solid #ee932a;}
+      }
+    }
+
+    .form-submit {
+	     margin: 0 auto;
+	     text-align: center;
+
+       .btn {
+	        margin: 0 auto;
+	        text-align: center;
+	        background: $color-lightOrange;
+	        border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+	        @include border-radius(40px);
+	        color: #FFF;
+	        font-weight: bold;
+	        line-height: 3;
+	        height: 50px;
+          width: 200px;
+	        transition: all 0.3s;
+	        border: 0;
+
+          &:active,
+          &:focus,
+          &:hover {
+            background: #bd6c0f;
+            color: #E3E3E3;
+	          outline: none;}
+        }
+
+     }
+  }
 }

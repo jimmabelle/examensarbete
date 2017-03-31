@@ -1,0 +1,38 @@
+footer {
+	background: url('#{$image-png}/footer_lodyas.png') repeat;
+	width: $width-12;
+	height: auto;
+	padding-top: 20px;
+	color: $color-lightOrange;
+	position: relative;
+    .flex-container {
+      @include flexbox();
+      @include box-orient(horizontal);
+      @include flex-flow(row wrap);
+      @include justify-content(space-around);
+        .flex-item {
+          width: 20%;
+          margin: 0 1%;
+          padding-left: 15px;
+	        padding-bottom: 15px;
+	        background-color: hsla(0, 0%, 0%, 0.10);
+          .socialmedia li:nth-child(1),
+          .contactnum li:nth-child(1),
+          .adress li:nth-child(1),
+          .information li:nth-child(1) {
+	           text-transform: uppercase;
+	           font-weight: bold;
+	           padding: 30px 0 20px 0;}
+          .socialmedia li:not(:first-child) a:hover,
+          .contact-num li:not(:first-child):hover,
+          .adress li:not(:first-child):hover,
+          .information li:not(:first-child) a:hover {
+             padding-bottom: 10px;}
+        }
+    }
+
+    .copyright {
+	     text-align: center;
+	     padding: 20px 0;
+     }
+}
