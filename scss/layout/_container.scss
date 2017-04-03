@@ -9,7 +9,8 @@ main {
 section {
   position: relative;
   width: $width-12;
-  padding: 20px;}
+  padding: 20px;
+  background-color:  $color-lightGray;}
 
 /* section i */
 @include keyframes (changeLetter)
@@ -48,7 +49,7 @@ section {
 
 /* section ii */
 section:nth-child(2) {
-	background-color:  $color-lightGray;
+
 
   div {
 	   background-color: $color-white;
@@ -77,20 +78,24 @@ section:nth-child(2) {
 
 }
 
-/* section iii */
-section:nth-child(3) {
+/* section iii
+section:nth-child(3), section:nth-child(5)  {
   background-color: $color-lightGray;
 
   div {
-	   background-color: $color-white;
+     background: url('#{$image-png}/footer_lodyas.png') repeat;
 	   padding: 30px;
 	   line-height: 150%;
+     opacity: 0.8;
+     filter: alpha(opacity=80); For IE8 and earlier
+     z-index: 1;
    }
 }
+*/
 
 /* section iv */
-section:nth-child(4) {
-  background-color: $color-lightGray;
+section:nth-child(3) {
+
   div {
 	   background-color: #fff;
      padding: 20px;
@@ -99,7 +104,7 @@ section:nth-child(4) {
        @include flex-flow(row wrap);
        @include justify-content(space-between);
        li {
-         background-color: $color-lightOrange;
+         background-color: hsl(32, 55%, 55%);
          width: 33%;
          margin: 0 auto;
          text-align: center;
@@ -117,8 +122,8 @@ section:nth-child(4) {
 }
 
 /* section v */
-section:nth-child(5) {
-  background-color:  $color-lightGray;
+section:nth-child(4) {
+
 
   div {
 	   background-color: #fff;
@@ -176,6 +181,7 @@ section:nth-child(5) {
 
   .form {
     margin: 0 auto;
+    width: auto;
 
     .form-field , .form-submit {
       padding: 10px 4px;}
@@ -210,27 +216,7 @@ section:nth-child(5) {
 	     margin: 0 auto;
 	     text-align: center;
 
-       .btn {
-	        margin: 0 auto;
-	        text-align: center;
-	        background: $color-lightOrange;
-	        border-bottom: 4px solid rgba(0, 0, 0, 0.1);
-	        @include border-radius(40px);
-	        color: #FFF;
-	        font-weight: bold;
-	        line-height: 3;
-	        height: 50px;
-          width: 200px;
-	        transition: all 0.3s;
-	        border: 0;
 
-          &:active,
-          &:focus,
-          &:hover {
-            background: #bd6c0f;
-            color: #E3E3E3;
-	          outline: none;}
-        }
 
      }
   }

@@ -1,0 +1,21 @@
+.btn {
+   margin: 0 auto;
+   text-align: center;
+   background: $color-lightOrange;
+   border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+   @include border-radius(40px);
+   color: #FFF;
+   font-weight: bold;
+   line-height: 3;
+   height: 50px;
+   width: 200px;
+   transition: all 0.3s;
+   border: 0;
+
+   &:active,
+   &:focus,
+   &:hover {
+     background: #bd6c0f;
+     color: #E3E3E3;
+     outline: none;}
+ }

@@ -36,3 +36,41 @@ footer {
 	     padding: 20px 0;
      }
 }
+
+.socialmedia {
+
+  li:nth-child(2) {
+    background: url('#{$image-svg}/facebook.svg') left center no-repeat;
+    background-size: 18px;
+    padding: 5px 0 5px 30px;}
+
+  li:nth-child(3) {
+    background: url('#{$image-svg}/instagram.svg') left center no-repeat;
+    background-size: 18px;
+    padding: 5px 0 5px 30px;}
+
+  li:nth-child(4) {
+    background: url('#{$image-svg}/twitter.svg') left center no-repeat;
+    background-size: 18px;
+    padding: 5px 0 5px 30px;}
+
+  li:nth-child(5) {
+    background: url('#{$image-svg}/google+.svg') left center no-repeat;
+    background-size: 18px;
+    padding: 5px 0 5px 30px;}
+
+}
+
+.contactnum {
+  li:nth-child(2) {
+    background: url('#{$image-svg}/phone.svg') left center no-repeat;
+    background-size: 18px;
+    padding: 5px 0 5px 30px;}
+
+}
+
+.information, .adress {
+  li {
+    padding: 5px 0 5px 0px;
+  }
+}
