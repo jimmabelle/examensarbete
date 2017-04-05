@@ -130,3 +130,40 @@
       -moz-box-orient: horizontal;
    -webkit-box-orient: horizontal;
            box-orient: horizontal;}
+
+/* responsive design ================================================
+// breakpoint screen widths
+$large: 1390px;
+$medium: 767px;
+$small: 480px;
+@mixin bp-large {
+  @media only screen and (max-width: $large) {
+    @content;
+  }
+}
+@mixin bp-medium {
+  @media only screen and (max-width: $medium) {
+    @content;
+  }
+}
+@mixin bp-small {
+  @media only screen and (max-width: $small) {
+    @content;
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}*/
