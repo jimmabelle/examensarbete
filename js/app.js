@@ -1,3 +1,4 @@
+/*
 // Get the modal & modal overlay
 var modal = document.getElementById('my-modal');
 
@@ -23,3 +24,30 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
+*/
+// Get the modal & modal overlay
+var modalOne = document.getElementById('modal-one');
+var modalTwo = document.getElementById('modal-two');
+
+// Get the button that opens the modal
+var btnReg = document.getElementById('reg-btn');
+var btnLog = document.getElementById('log-btn');
+
+// When the user clicks on the button, open the modal
+function addListeners() {
+  if(window.addEventListener) {
+    btnReg.addEventListener("click", modalReg, false);
+    btnLog.addEventListener("click", modalLog, false);
+  } else if (window.attachment) {
+    btnReg.addEventListener("onclick", modalReg);
+    btnLog.addEventListener("onclick", modalLog);
+  }
+
+  // add functions
+  function modalReg() {
+    modalOne.style.display = "block"; }
+  function modalLog() {
+    modalTwo.style.display = "block"; }
+}
+
+window.onload = addListeners;

@@ -636,21 +636,20 @@ section:nth-child(4) div {
   -moz-border-radius: 20px;
   border-radius: 20px;
   width: 380px;
+  height: 380px;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -200px;
-  margin-top: -214px;
+  top: calc(50% - 190px);
+  left: calc(50% - 190px);
   overflow: hidden;
 }
 
-/* line 162, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 161, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-header {
   background-color: #eeeeee;
   padding: 10px 5px;
 }
 
-/* line 166, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 165, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-header a {
   font-size: 200%;
   position: absolute;
@@ -664,35 +663,35 @@ section:nth-child(4) div {
   color: #ee932a;
 }
 
-/* line 175, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 174, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-header a:hover {
   transform: rotate(1turn);
 }
 
-/* line 180, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 179, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-content {
   padding: 15px;
 }
 
-/* line 183, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 182, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-content .form {
   margin: 0 auto;
   width: auto;
 }
 
-/* line 187, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 186, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-content .form .form-field, .modal-content .form .form-submit {
   padding: 10px 4px;
 }
 
-/* line 190, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 189, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-content .form .form-field {
   border: none;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 195, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 194, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-content .form .form-field .form-label {
   font-weight: bold;
   text-align: justify;
@@ -700,7 +699,7 @@ section:nth-child(4) div {
   padding-bottom: 2px;
 }
 
-/* line 201, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 200, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-content .form .form-field .form-input {
   width: 100%;
   padding: 5px 0;
@@ -711,13 +710,13 @@ section:nth-child(4) div {
   transition: border 0.3s;
 }
 
-/* line 210, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 209, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-content .form .form-field .form-input:focus {
   outline: none;
   border: 1px solid #ee932a;
 }
 
-/* line 216, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
+/* line 215, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_container.scss */
 .modal-content .form .form-submit {
   margin: 0 auto;
   text-align: center;
@@ -769,13 +768,17 @@ section:nth-child(4) div {
   .header .form-wrapper .top-cust-form li:nth-child(3) {
     display: none;
   }
-  /* line 25, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 24, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  .navi {
+    display: none;
+  }
+  /* line 28, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   section:nth-child(3) .flex-container {
     width: 100%;
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 28, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 31, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   section:nth-child(3) .flex-container .flex-items {
     width: 100%;
     max-width: 1000px;
@@ -783,22 +786,22 @@ section:nth-child(4) div {
     max-height: 200px;
     margin: 5px auto;
   }
-  /* line 34, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 37, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   section:nth-child(3) .flex-container .flex-items img {
     width: 10%;
     padding-bottom: 2%;
   }
-  /* line 37, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 40, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   section:nth-child(3) .flex-container .flex-items img:not(.png) {
     width: 15%;
   }
-  /* line 44, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 47, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   footer .flex-container {
     width: 100%;
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 47, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 50, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   footer .flex-container .flex-item {
     width: 100%;
     max-width: 1000px;
@@ -809,29 +812,29 @@ section:nth-child(4) div {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 60, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 63, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   .header {
     width: 100%;
   }
-  /* line 66, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 69, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   .header .form-wrapper .top-cust-form li:last-child {
     display: block;
   }
-  /* line 69, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 72, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   .header .form-wrapper .top-cust-form li:first-child,
   .header .form-wrapper .top-cust-form li:nth-child(2),
   .header .form-wrapper .top-cust-form li:nth-child(3) {
     display: none;
   }
-  /* line 77, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 80, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   nav {
     width: 100%;
   }
-  /* line 79, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 82, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   nav ul {
     width: 100%;
   }
-  /* line 81, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 84, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   nav ul li {
     display: block;
     border: 2px solid #ee932a;
