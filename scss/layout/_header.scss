@@ -21,7 +21,7 @@ $image-svg: "../images/svg";
     .logo-wrapper {
       position: absolute;
       left: 0;
-      top: 0px;}
+      top: 0;}
 
       .form-wrapper {
       position: absolute;
@@ -30,7 +30,7 @@ $image-svg: "../images/svg";
       top: 14px;}
 
       .top-cust-form li {
-      float: left;
+      float: right;
       padding: 5px;
       margin-right: 10px;
       border: 2px solid $color-lightOrange;
@@ -52,7 +52,7 @@ $image-svg: "../images/svg";
           @include transition(width, .4s, ease-in-out, null);
 
               &:hover {
-              width: 300px;}
+              width: 400px;}
 
               &:focus {
               outline: none;}

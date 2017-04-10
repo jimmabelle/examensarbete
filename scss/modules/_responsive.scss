@@ -5,24 +5,31 @@
 
 /* table */
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-  .header {
-    width: 100%;
-    .form-wrapper {
-      .top-cust-form {
-
-      li:last-child {
-        display: block;}
-
-      li:first-child,
-      li:nth-child(2),
-      li:nth-child(3){
-        display: none;}
-      }
-    }
-  }
 
   .navi {
-    display: none;}
+    .navi-menu {
+      display: block;
+      height: 45px;
+      width: 100%;
+      background: url('#{$image-svg}/menu.svg') 95% 5% no-repeat;}
+
+    ul {
+      height: 0;
+      li {
+        display: block;
+        border: 1px solid $color-lightOrange;
+        text-align: left;
+        margin: 0;
+        background-color: hsl(9, 100%, 30%);
+
+          &:not(:last-child){
+            border-bottom: none;}
+      }
+    }
+
+     ul.open {
+        height: auto;}
+  }
 
   section:nth-child(3) {
     .flex-container {

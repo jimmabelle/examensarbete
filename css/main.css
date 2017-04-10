@@ -145,7 +145,7 @@ fieldset {
 .header .header-content .logo-wrapper {
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 0;
 }
 
 /* line 26, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
@@ -158,7 +158,7 @@ fieldset {
 
 /* line 32, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
 .header .header-content .top-cust-form li {
-  float: left;
+  float: right;
   padding: 5px;
   margin-right: 10px;
   border: 2px solid #ee932a;
@@ -192,7 +192,7 @@ fieldset {
 
 /* line 54, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
 .header .header-content .top-cust-form li:nth-child(1) .form input[type="search"]:hover {
-  width: 300px;
+  width: 400px;
 }
 
 /* line 57, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/layout/_header.scss */
@@ -754,31 +754,40 @@ section:nth-child(4) div {
 
 /* table */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 8, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
-  .header {
-    width: 100%;
-  }
-  /* line 13, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
-  .header .form-wrapper .top-cust-form li:last-child {
+  /* line 10, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  .navi .navi-menu {
     display: block;
+    height: 45px;
+    width: 100%;
+    background: url("../images/svg/menu.svg") 95% 5% no-repeat;
   }
   /* line 16, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
-  .header .form-wrapper .top-cust-form li:first-child,
-  .header .form-wrapper .top-cust-form li:nth-child(2),
-  .header .form-wrapper .top-cust-form li:nth-child(3) {
-    display: none;
+  .navi ul {
+    height: 0;
   }
-  /* line 24, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
-  .navi {
-    display: none;
+  /* line 18, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  .navi ul li {
+    display: block;
+    border: 1px solid #ee932a;
+    text-align: left;
+    margin: 0;
+    background-color: #991700;
   }
-  /* line 28, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 25, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  .navi ul li:not(:last-child) {
+    border-bottom: none;
+  }
+  /* line 30, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  .navi ul.open {
+    height: auto;
+  }
+  /* line 35, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   section:nth-child(3) .flex-container {
     width: 100%;
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 31, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 38, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   section:nth-child(3) .flex-container .flex-items {
     width: 100%;
     max-width: 1000px;
@@ -786,22 +795,22 @@ section:nth-child(4) div {
     max-height: 200px;
     margin: 5px auto;
   }
-  /* line 37, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 44, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   section:nth-child(3) .flex-container .flex-items img {
     width: 10%;
     padding-bottom: 2%;
   }
-  /* line 40, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 47, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   section:nth-child(3) .flex-container .flex-items img:not(.png) {
     width: 15%;
   }
-  /* line 47, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 54, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   footer .flex-container {
     width: 100%;
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 50, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 57, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   footer .flex-container .flex-item {
     width: 100%;
     max-width: 1000px;
@@ -812,29 +821,29 @@ section:nth-child(4) div {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 63, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 70, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   .header {
     width: 100%;
   }
-  /* line 69, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 76, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   .header .form-wrapper .top-cust-form li:last-child {
     display: block;
   }
-  /* line 72, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 79, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   .header .form-wrapper .top-cust-form li:first-child,
   .header .form-wrapper .top-cust-form li:nth-child(2),
   .header .form-wrapper .top-cust-form li:nth-child(3) {
     display: none;
   }
-  /* line 80, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 87, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   nav {
     width: 100%;
   }
-  /* line 82, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 89, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   nav ul {
     width: 100%;
   }
-  /* line 84, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
+  /* line 91, C:/Users/JimmaBelle/Documents/GitHub/examensarbete/scss/modules/_responsive.scss */
   nav ul li {
     display: block;
     border: 2px solid #ee932a;
